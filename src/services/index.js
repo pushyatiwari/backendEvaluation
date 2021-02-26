@@ -1,5 +1,6 @@
-const { getCategory } = require('./category.services');
+const { getCategory, getDistinctFeatures } = require('./category.services');
 
 module.exports = {
   getCategory,
+  getDistinctFeatures,
 };

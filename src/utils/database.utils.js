@@ -86,6 +86,8 @@ const insertIntoItem = async (itemData, itemId, categoryName) => {
     return item;
   }
 };
+
+
 const parseItemFeatures = (itemFeatures) => {
   // eslint-disable-next-line no-useless-concat
   const itemMetaDataWithArrayOfString = itemFeatures.map((item) => `${'name' + ':'}${item.name},` + 'value' + `:${item.value}`);

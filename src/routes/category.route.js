@@ -3,9 +3,7 @@ const categoryHandler = require('../handlers/category.handler');
 
 const categoryRouter = express.Router();
 categoryRouter.get('/', categoryHandler.getCategory);
-// quoteRouter.post('/:id', quoteHandler.getQuotesById);
-// quoteRouter.delete('/:id', quoteHandler.deleteQuotesById);
-// quoteRouter.put('/:id', updateValidator, quoteHandler.updateQuotesById);
+categoryRouter.get('/:id', categoryHandler.getDistinctFeaturesOfCategory);
 module.exports = {
   categoryRouter,
 };
